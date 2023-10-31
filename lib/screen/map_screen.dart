@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:location_platform_interface/location_platform_interface.dart';
+import 'package:transport/api_control.dart';
 import 'package:transport/screen/serve/base_screen.dart';
 
 import 'package:flutter_map/flutter_map.dart';
@@ -100,6 +101,6 @@ class currentLocitionMarker extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return IconButton(onPressed: (){}, icon: Icon(Icons.circle), iconSize: 40.0);
+    return IconButton(onPressed: (){ApiControl().setBusStopData();}, icon: Icon(Icons.circle), iconSize: 40.0);
   }
 }

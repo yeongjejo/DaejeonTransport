@@ -5,14 +5,14 @@ import 'package:permission_handler/permission_handler.dart';
 
 
 
-class CheckPermissionScreen extends StatefulWidget {
-  const CheckPermissionScreen({super.key});
+class LoadingScreen extends StatefulWidget {
+  const LoadingScreen({super.key});
 
   @override
-  _CheckPermissionScreen createState() => _CheckPermissionScreen();
+  _LoadingScreen createState() => _LoadingScreen();
 }
 
-class _CheckPermissionScreen extends State<CheckPermissionScreen> {
+class _LoadingScreen extends State<LoadingScreen> {
   PermissionStatus _status = PermissionStatus.denied;
 
   @override
@@ -43,3 +43,4 @@ class _CheckPermissionScreen extends State<CheckPermissionScreen> {
     );
   }
 }
+

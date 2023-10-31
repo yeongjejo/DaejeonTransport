@@ -15,7 +15,7 @@ void main() {
     
       initialRoute: '/permission',
       routes: {
-        '/permission' : (BuildContext context) => const CheckPermissionScreen(),
+        '/permission' : (BuildContext context) => const LoadingScreen(),
         '/favorites' : (BuildContext context) => const FavoritesScreen(),
         '/map' : (BuildContext context) => MapScreen(),
         '/subway' : (BuildContext context) => const SubWayScreen(),
